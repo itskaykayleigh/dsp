@@ -54,7 +54,7 @@ I installed both. Used Python 2 when studying *Learn Python the Hard Way*. And s
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-Either **_python -V_** or **_python --version_** would work. 
+Run either **_python -V_** or **_python --version_** at the commend line would work. 
 
  
 
