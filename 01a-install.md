@@ -48,13 +48,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I installed both. Used Python 2 when studying *Learn Python the Hard Way*. And since Python 3 is recommended, I installed it, too. 
 
 ### Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Either **_python -V_** or **_python --version_** would work. 
 
  
 
