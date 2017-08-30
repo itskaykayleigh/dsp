@@ -77,11 +77,13 @@ print("This file was created by Reshama")
 
 Upload these 3 files to the [`editors`](editors/) folder.  
 
+Done!
+
 ### Q2. Terminal Editor
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I'd like to start with **_nano_** because of its smooth learning curve for starters. 
 
 --
 
@@ -89,6 +91,15 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I may start with **_Sublime_**. I wanted to start with editors I've used before and move to the others once I am more familiarized with the first one. 
 
+The following are a few interesting features along with useful keyboard shortcuts: 
+ * Use Multiple Selections to rename variables quickly - **⌘D**
+ * Make batch edits with Multiple Selections - **⇧⌘L** 
+ * The Command Palette gives fast access to functionality - **⇧⌘P** ("ssoy" to set the syntax of the current file to Python) 
+ * Use Goto Anything to navigate between files - **⌘P** 
+ * Use Goto Anything to show a function, line or word within a file - type **@** after a file name to filter on symbols 
+ * Find and Replaced with regular expressions 
+
+And customization is possible through preference to change settings, menus and etc. 
  
