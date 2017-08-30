@@ -83,7 +83,7 @@ Done!
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
-I'd like to start with **_nano_** because of its smooth learning curve for starters. 
+I'd like to start with **_nano_** because of its smooth learning curve for starters. Besides, vim and emacs are powerful and effective if I needed to program a lot, which might not be the case for data science learning. 
 
 --
 
