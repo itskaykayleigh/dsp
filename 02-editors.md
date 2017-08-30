@@ -91,7 +91,7 @@ I'd like to start with **_nano_** because of its smooth learning curve for start
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-I may start with **_Sublime_**. I wanted to start with editors I've used before and move to the others once I am more familiarized with the first one. 
+I may start with **_Sublime_**. I wanted to start with editors I've used before and move to the others once I am more familiarized with the first one. Also importantly, Sublime has a minimap on the side that provides a view of files and keyboard shortcuts for most actions, which is mostly effective when dealing with a lot of files/coding at the same time. Its ability to deal with multiple languages is also a plus. 
 
 The following are a few interesting features along with useful keyboard shortcuts: 
  * Use Multiple Selections to rename variables quickly - **⌘D**
@@ -101,5 +101,5 @@ The following are a few interesting features along with useful keyboard shortcut
  * Use Goto Anything to show a function, line or word within a file - type **@** after a file name to filter on symbols 
  * Find and Replaced with regular expressions 
 
-And customization is possible through preference to change settings, menus and etc. 
+And customization is possible in almost every aspect of the editor to allow speedy and effective coding, namely Key Bindings, Menus, Snippets, Macros, Completions, and many more. 
  
