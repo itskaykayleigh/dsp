@@ -61,19 +61,13 @@ ls -Glp | list long format with no owner (only group ID) and puts \ after direct
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-ls -d
-
-ls -t 
-
-ls -a 
-
-ls -l
-
-ls -r
-
-ls -X 
-
-ls ~
+ls -d  
+ls -t  
+ls -a  
+ls -l  
+ls -r   
+ls -X  
+ls ~ 
 
 ---
 
@@ -85,8 +79,8 @@ It executes argument. Specifically, it reads data from standard input (stdin) an
 If no command is supplied as argument to xargs, the default command that the tool executes is echo. 
 
 Examples to use: 
- * xargs find -name "*.txt"
-`pass the find command along with its option "-name" as argument to xargs, and provide "*.txt" as input through stdin` 
+ * xargs find -name "*.txt"  
+ pass the find command along with its option "-name" as argument to xargs, and provide "*.txt" as input through stdin  ` 
 `--> The command will search all .txt files in the working directory` 
 
  
