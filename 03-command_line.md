@@ -19,7 +19,19 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+Result | Command Line
+------ | ------------ 
+show current working directory path | pwd 
+creating a directory | mkdir directory_name 
+deleting a directory | rm -r dirctory_name 
+creating a file using `touch` command | touch filename 
+deleting a file | rm filename 
+renaming a file | mv filename_original filename_renamed
+listing hidden files | ls -a 
+copying a file from one directory to another | cp directory1/filename directory2/
+list all files of current directory | ls 
+switch directory | cd 
+move a file to a directory | mv filename directory/
 
 ---
 
@@ -34,15 +46,28 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+Command Line | Result 
+------------ | ------
+ls | list all files of current directory
+ls -a | list all contents, including hidden files and directories
+ls -l | list all contents in long format 
+ls -lh | list long format with readable file size
+ls -lah | list long format with readable file size including hidden files
+ls -t | sort by time & date lastly modified 
+ls -Glp | list long format with no owner (only group ID) and puts \ after directory name  
 ---
 
 ### Q3.  More List Files in Unix  
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+ls -d 
+ls -t 
+ls -a 
+ls -l 
+ls -r
+ls -X 
+ls ~
 
 ---
 
@@ -50,7 +75,13 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+It executes argument. Specifically, it reads data from standard input (stdin) and executes the command (supplied to it as argument) one or more times based on the input read. Any blanks and spaces in input are treated as delimiters, while blank lines are ignored. And 
+If no command is supplied as argument to xargs, the default command that the tool executes is echo. 
+
+Examples to use: 
+ * xargs find -name "*.txt"
+   pass the find command along with its option "-name" as argument to xargs, and provide "*.txt" as input through stdin 
+   --> The command will search all .txt files in the working directory 
 
  
 
