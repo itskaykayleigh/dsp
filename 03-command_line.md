@@ -61,13 +61,19 @@ ls -Glp | list long format with no owner (only group ID) and puts \ after direct
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-`ls -d`
-`ls -t` 
-`ls -a` 
-`ls -l`
-`ls -r`
-`ls -X` 
-`ls ~`
+ls -d
+
+ls -t 
+
+ls -a 
+
+ls -l
+
+ls -r
+
+ls -X 
+
+ls ~
 
 ---
 
