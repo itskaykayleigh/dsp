@@ -67,7 +67,6 @@ ls -a
 ls -l  
 ls -r   
 ls -X  
-ls ~ 
 
 ---
 
