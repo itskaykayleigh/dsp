@@ -12,7 +12,10 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Below is a comparision between *lists* and *tuples* 
+Characters | Lists | Tuples 
+---------- | ----- | ------
+Definition | a sequence of values | 
 
 ---
 
