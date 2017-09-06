@@ -16,8 +16,15 @@ Below is a comparision between *lists* and *tuples*:
 
 Characters | Lists | Tuples 
 ---------- | ----- | ------ 
-Similarity | a sequence of values 
-           | values can be any type 
+Similarity | a sequence of values | a sequence of values / comma-sperated lists of values 
+Similarity | values can be any type | values can be any type 
+Similarity | indexed by integers | indexed by integers 
+Use of operators | bracket operater indexes an element | bracket operater indexes an element 
+Difference | mutable | immutable (cannot modify)
+Format | l = ['a', 'b', 'c'] | t = 'a', 'b', 'c' or t = ('a', 'b', 'c')
+Format - single element | l1 = ['a'] | t1 = 'a', 
+Replacement | l[0] = 'A' | t = ('A',) + t[1:] 
+Work as keys in dictionaries | no, only as values - will create different keys with same value if modified | yes, very commonly - each tuple can be a key-value pair 
 
 ---
 
