@@ -16,7 +16,8 @@ Below is a comparision between *lists* and *tuples*:
 
 Characters | Lists | Tuples 
 ---------- | ----- | ------ 
-Definition | a sequence of values | have fun 
+Similarity | a sequence of values 
+           | values can be any type 
 
 ---
 
