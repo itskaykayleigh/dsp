@@ -63,7 +63,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+Assuming 365 days a year, and 30 days a month, there are **_936_** days between start and stop date
 
 b.  
 ```
@@ -71,7 +71,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+Assuming 365 days a year, and 30 days a month, there are **_517_** days between start and stop date
 
 c.  
 ```
@@ -79,7 +79,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+Assuming 365 days a year, and 30 days a month, there are **_7844_** days between start and stop date
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
