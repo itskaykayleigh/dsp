@@ -1,5 +1,6 @@
 # Hint:  use Google to find python function
 
+#Option 1: define a new object Days, assuming 365 days in a year, 30 days in a month 
 class Days(object):
     """Represents the day of the year.
     attributes: year, month, day
@@ -18,6 +19,16 @@ def days_to_day(days):
     day_month = days.month * 30 
     day = day_year + days.day + day_month
     return day 
+
+#option 2 - use built-in modules and functions 
+from datetime import datetime
+
+def days_between(d1, d2):
+    d1 = datetime.strptime(d1, "%m-%d-%Y")
+    d2 = datetime.strptime(d2, "%m-%d-%Y")
+    return abs((d2 - d1).days)
+
+days_between('01-02-2013', '07-28-2015') 
   
 ####a) 
 date_start = '01-02-2013'  
@@ -35,12 +46,25 @@ duration = diff_day(start, end)
 print_day(duration)
 days_to_day(duration)
 
-#result: 936 days 
+#result from option 1: 936 days 
+#result from option 2: 937 days 
 
 ####b)  
-date_start = '12312013'  
-date_stop = '05282015' 
+#option 2: 
 
+date_start = '12312013'  
+date_stop = '05282015'
+
+from datetime import datetime
+
+def days_between(d1, d2):
+    d1 = datetime.strptime(d1, "%m%d%Y")
+    d2 = datetime.strptime(d2, "%m%d%Y")
+    return abs((d2 - d1).days)
+
+days_between(date_start, date_stop) 
+
+#option 1: 
 start = Days()
 start.year = 2013
 start.month = 12
@@ -53,7 +77,8 @@ duration = diff_day(start, end)
 print_day(duration)
 days_to_day(duration)
 
-#result: 517 days 
+#result from option 1: 517 days 
+#result from option 2: 513 days 
 
 ####c)  
 date_start = '15-Jan-1994'  
@@ -71,4 +96,5 @@ duration = diff_day(start, end)
 print_day(duration)
 days_to_day(duration)
 
-#result: 7844 days 
+#result from option 2: 7844 days 
+#result from option 1: 7810 days 
