@@ -85,7 +85,35 @@ The sorted methods is to sort the list named mylist. While the key argument spec
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+List comprehensions are tools to transform one list into another. In the process, elements in the list can be transformed as needed. Every list comprehension can be rewritten as a for loop but not every for loop can be rewritten as a list comprehension.  
+
+Examples:  
+
+doubled_odds = map(lambda n: n * 2, filter(lambda n: n % 2 == 1, numbers))  
+
+doubled_odds = [n * 2 for n in numbers if n % 2 == 1]  
+
+flattened = []  
+for row in matrix:  
+    for n in row:  
+        flattened.append(n)    
+        
+flattened = [n for row in matrix for n in row]    
+
+flipped = {}  
+for key, value in original.items():  
+    flipped[value] = key  
+    
+flipped = {value: key for key, value in original.items()}  
+
+List comprehension:    
+a = {x for x in 'abracadabra' if x not in 'abc'}  
+a  
+{'r', 'd'}  
+
+Dictionary comprehension:  
+{x: x ** 2 for x in (2, 4, 6)}  
+{2: 4, 4: 16, 6: 36}    
 
 ---
 
