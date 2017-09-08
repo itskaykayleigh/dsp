@@ -32,7 +32,26 @@ Work as keys in dictionaries | no, only as values - will create different keys w
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Both list and set contain a sequence of items. Lists are ordered, while sets are not. Ses require items to be hashable, lists don't, so if some elements are non-hasable, cannot use sets. Sets forbid duplicates, lists do not. And due to this feature, sets are usually used to build sequence of unique items. 
+
+a = set([1, 2, 3, 4])
+b = set([3, 4, 5, 6])
+a | b # Union
+{1, 2, 3, 4, 5, 6}
+
+a = [1,2,3,4]
+b = [3,4,5,6]
+a + b 
+[1,2,3,4,3,4,5,6] 
+
+market = ['apples', 'oranges', 'apples', 'bananas', 'pears', 'tomatos']
+And to create a collection with only unique fruits in the market 
+fruits = set(market) 
+'orange' in fruits  
+True 
+Fast membership testing 
+
+In terms of finding an element (as in x in s), sets are significantly faster, especially for large sets. This is because sets use a hash function to map to a bucket. Whenever we add an object to a set, the position within the memory of the set object is determined using the hash of the object to be added. When testing for membership, all that needs to be done is basically to look if the object is at the position determined by its hash, so the speed of this operation does not depend on the size of the set. In contrast, Python has to compare every single member for equality to find out existance of an item in a list, i.e. the test is O(n).
 
 ---
 
@@ -40,7 +59,25 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Python enables the creation of anonymous functions, which is functions defined without a name, using a keyword called `lambda`, instead of _def_. And a lambda function has the below syntax, with any number of arguments but only one expression. Expression is to be evaluated and returned. `lambda` function is used mostly for a short period of time, or as an argument to a higher-order function. 
+
+lambda arguments: expression
+
+Program to show the use of lambda functions
+
+double = lambda x: x * 2
+print(double(5))
+
+mylist = [3,6,3,2,4,8,23]
+sorted(mylist, key=lambda x: x%2==0)
+[3, 3, 23, 6, 2, 4, 8]
+So what the function does is it specifies the key as a lambda function, which returns an even number. And sorted will sort mylist once based on the key specified. And since True = 1, False = 0 in boolean expression, odd number comes in first. 
+
+mylist = [(3, 10, 8), (6, 2, 8), ( 2, 6, 4), (6, 8, 5)]
+sorted(mylist, key=lambda x: x[1])
+[(6, 2, 8), (2, 6, 4), (6, 8, 5), (3, 10, 8)]
+And below is the rationale behind the result we get: 
+The sorted methods is to sort the list named mylist. While the key argument specifies that, for each element (x) in mylist, return index 1 of that element, then sort all of the elements of the original list 'mylist' by the sorted order of the list calculated by the lambda function. Result from the lamda function is (2, 6, 8, 5), which will be the order each tuple is placed in the final list after sorted(). 
 
 ---
 
