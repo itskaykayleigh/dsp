@@ -73,9 +73,12 @@ def different_domain(hist):
 	return len(hist)
 print 'Number of different domain:', different_domain(hist)	
 print hist 
+
 h = list(hist)
-print h 
+print 'List of unique domains:', h
+
 
 # Number of different domain: 4
 # {'email.chop.edu': 1, 'upenn.edu': 12, 'cceb.med.upenn.edu': 1, 'mail.med.upenn.edu': 23}
-# ['email.chop.edu', 'upenn.edu', 'cceb.med.upenn.edu', 'mail.med.upenn.edu']
+# List of unique domains: ['email.chop.edu', 'upenn.edu', 'cceb.med.upenn.edu', 'mail.med.upenn.edu']
+
