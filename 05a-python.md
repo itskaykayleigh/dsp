@@ -164,6 +164,7 @@ Edit the 5 functions in [q7_lists.py](python/q7_lists.py)
 ### Q8. Parsing
 Write a script as indicated (using the football data) in [q8_parsing.py](python/q8_parsing.py)
 
+>> Done 
 
 
 
