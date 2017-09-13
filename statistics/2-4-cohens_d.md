@@ -8,7 +8,7 @@ firsts.totalwgt_lb.mean(), others.totalwgt_lb.mean()
 7.201094430437772, 7.325855614973262  
 This indicates first babies are slightly lighter than others.  
 
-So in order to find the difference between the groupss, we'd use the CohenEffectSize function to compute the difference in means expressed in number of standard deviations:
+2. Find the difference between the groupss - use the CohenEffectSize function to compute the difference in means expressed in number of standard deviations:
 
 def CohenEffectSize(group1, group2):  
     diff = group1.mean() - group2.mean() .  
