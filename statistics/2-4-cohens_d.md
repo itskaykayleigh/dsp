@@ -23,4 +23,4 @@ def CohenEffectSize(group1, group2):
     
 CohenEffectiveSize(firsts.totalwgt_lb, others.totalwgt_lb)   
 -0.088672927072602006  
-This means the difference in means is -0.0887, which is bigger than that of pregnancy length (0.029). 
+This means the difference in means is -0.0887, which is bigger than that of pregnancy length (0.029)  
