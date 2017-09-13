@@ -21,12 +21,11 @@ pmf = thinkstats2.Pmf(actual, label='numkdhh')
 3. Biased ditribution if asked childern under 18:   
 def BiasPmf(pmf, label):  
     new_pmf = pmf.Copy(label=label)  
-
+    
     for x, p in pmf.Items():  
         new_pmf.Mult(x, x)  
-        
-    new_pmf.Normalize()  
-    return new_pmf  
+    new_pmf.Normalize()  
+    return new_pmf    
   
 4. Plot the actual and biased distributions   
 
