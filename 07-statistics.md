@@ -103,7 +103,9 @@ that identical twins are boys is P(K|I) = 1/2. The prior probability for fratern
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Both statistics specify a distribution for the observed data given a set of parameters. However, the essential difference between Bayesian and Frequentist statisticians is in how probability is used and how parameters are intepreted.  
+First of all, Bayesians use probablity more widely beginning with a prior distribution, which is a reflection of prior knowledge about the probability before collecting any data. Prior information on the data will be updated in the light of new data collected (posterior distribution) to make statements/predictions/analysis. While Frequentists only allow probability statments about sampling - it only cares about random sampling from the current data.  
+In addition, parameters are viewed as fixed but unknown quantities by Frequentist, and Bayesian views them as random variables. 
 
 ---
 
